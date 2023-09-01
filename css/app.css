@@ -18,6 +18,9 @@ body::-webkit-scrollbar {
     font-family: 'Sacramento', cursive !important;
     color: #ffffff !important;
 }
+.boddy{
+    color: #dde3ea
+}
 
 .cropper {
     width: 14rem;
@@ -88,5 +91,35 @@ body::-webkit-scrollbar {
     100% {
         transform: translateY(1rem);
         opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
